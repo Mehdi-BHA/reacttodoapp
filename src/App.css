@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    outline:none;
+    font-family: 'PT Sans', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    background-color: #FBB13C;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App{
+    background-color: #D81159;
+    width:80%;
+    max-width: 600px;
+    height:600px;
+    padding:15px;
+    margin:50px auto;
+    border-radius:10px
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App h1{
+    text-align: center;
+    color: white;
+
 }
 
-.App-link {
-  color: #61dafb;
+.todo-form{
+    display:flex;
+    justify-content: space-between;
+}
+.todo-form input{
+    background-color: #8F2D56;
+    width: 80%;
+    height:40px;
+    padding:5px 20px;
+    font-size: 15px;
+    border: none;
+    color:white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-form input::placeholder{
+    color:rgba(255, 255, 255, 0.415);
+}
+
+
+.todo-form button{
+    background-color: rgba(37, 10, 10, 0.585);
+    border:none;
+    color:white;
+    font-size: 15px;
+    width:18%;
+    height:40px;
+    cursor: pointer;
+}
+
+
+.full-list{
+    padding:15px 0;
+}
+.list-item{
+    background-color: #73D2DE;
+    width: 90%;
+    padding:10px 20px;
+    margin:10px 0;
+    font-size: 15px;
+    border: none;
+    color:rgb(0, 0, 0);
+    border-radius:5px;
+}
+
+.list-item input{
+    background-color:transparent;
+    border:none;
+    font-size: 15px;
+    width:100%
+}
+
+.delete-but{
+    background-color: #d30e0e;
+    width: 8%;
+    padding: 11px 0;
+    margin:10px 0;
+    font-size: 15px;
+    border: none;
+    color:white;
+    border-radius:5px;
+    text-align: center;
+    cursor:pointer;
 }
